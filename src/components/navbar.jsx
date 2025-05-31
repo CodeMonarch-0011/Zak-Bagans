@@ -2,7 +2,7 @@ import "../style/components.css"
 import { CgMenuGridO } from 'react-icons/cg'
 import { openMail, navigate } from "../utils/mailer";
 
-export function Navbar ({ setSliderOpen }) {
+export function Navbar ({ setSliderOpen, setContactOpen }) {
     return (
         <div className="navbar">
             <span className="navbar-logo"> ZakBagans </span>
@@ -14,7 +14,7 @@ export function Navbar ({ setSliderOpen }) {
                 <span onClick={() => navigate("#contact")}>Contact Us</span>
             </nav>
 
-            <button className="button" onClick={(e) => openMail(e, "artistmanagementinquiries@gmail.com")}>
+            <button className="button" onClick={() => setContactOpen(true)}>
                 Contact Us
             </button>
 

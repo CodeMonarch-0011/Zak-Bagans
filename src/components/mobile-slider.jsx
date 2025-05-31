@@ -2,10 +2,15 @@ import "../style/components.css"
 import { BsX } from "react-icons/bs"
 import { navigate, openMail } from "../utils/mailer"
 
-export function MobileSlider ({ setSliderOpen }) {
+export function MobileSlider ({ setSliderOpen, setContactOpen }) {
 
     function handleNavigation (link) {
         navigate(link)
+        setSliderOpen(false)
+    }
+
+    function contact () {
+        setContactOpen(true)
         setSliderOpen(false)
     }
 
@@ -21,7 +26,7 @@ export function MobileSlider ({ setSliderOpen }) {
                 <span onClick={() => handleNavigation("#contact")}>Contact Us</span>
             </nav>
 
-            <button className="button slider-button" onClick={(e) => openMail(e, "artistmanagementinquiries@gmail.com")}>
+            <button className="button slider-button" onClick={contact}>
                 Contact us
             </button>
         </div>

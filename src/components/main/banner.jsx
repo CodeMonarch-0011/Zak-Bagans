@@ -2,7 +2,7 @@ import "../../style/main.css"
 import { openMail } from "../../utils/mailer"
 import Zak from "/images/zak-bck.png"
 
-export function Banner() {
+export function Banner({setContactOpen}) {
     return (
         <section className="main-page-banner" id="home">
             <div className="main-page-banner-content">
@@ -12,7 +12,7 @@ export function Banner() {
 
                 <span>From once-skeptical filmmaker to becoming the face of ghost hunting and building a supernatural empire</span>
 
-                <button className="button" onClick={(e) => openMail(e, "artistmanagementinquiries@gmail.com")}>
+                <button className="button" onClick={() => setContactOpen(true)}>
                     Get in Touch
                 </button>
             </div>

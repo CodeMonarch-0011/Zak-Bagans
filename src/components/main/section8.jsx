@@ -13,7 +13,7 @@ function Copyright () {
     )
 }
 
-export function Section8 () {
+export function Section8 ({setContactOpen}) {
     return (
         <div className="section-8" id="contact">
             <span className="section-8-header">A Legacy of Curiosity and Courage</span>
@@ -22,7 +22,7 @@ export function Section8 () {
                 Zak Bagans has redefined the landscape of paranormal investigation, transforming personal encounters into a multifaceted career that spans television, literature, music, and museum curation. His relentless quest to understand the unknown continues to inspire and intrigue audiences worldwide, solidifying his legacy as a pioneer in exploring the realms beyond our understanding.
             </span>
 
-            <button className="button secondary-button" onClick={(e) => openMail(e, "artistmanagementinquiries@gmail.com")}> Reach Out To Us</button>
+            <button className="button secondary-button" onClick={() => setContactOpen(true)}> Reach Out To Us</button>
 
             <div className="section-8-contacts">
                 <span onClick={() => openSocial("https://www.instagram.com/realzakbagans")}> <AiFillInstagram /> </span>

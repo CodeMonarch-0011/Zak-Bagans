@@ -11,10 +11,10 @@ import "../../style/main.css"
 
 
 
-export default function Page () {
+export default function Page ({setContactOpen}) {
     return (
         <main className="main-page">
-            <Banner />
+            <Banner setContactOpen={setContactOpen} />
             <Section1 />
             <Section2 />
             <Section3 />
@@ -22,7 +22,7 @@ export default function Page () {
             <Section5 />
             <Section6 />
             <Section7 />
-            <Section8 />
+            <Section8 setContactOpen={setContactOpen} />
         </main>
     )
 }

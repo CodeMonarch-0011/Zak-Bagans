@@ -24,6 +24,7 @@ html, body, #root {
   --bg: rgb(39, 39, 39);
   --text: rgb(255, 255, 255);
   --primary: rgb(208, 36, 53);
+  --primary-light: rgb(208, 36, 53, .3);
   /* background: linear-gradient(var(--bg), rgb(36, 36, 36)); */
   color: var(--text);
   font-family: Poppins;
