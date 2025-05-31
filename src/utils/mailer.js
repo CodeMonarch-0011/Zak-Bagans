@@ -1,9 +1,9 @@
 export function openMail (mail) {
-    window.location.href = `https://mail.google.com/mail/?view=cm&to=${mail}`
+    window.open(`https://mail.google.com/mail/?view=cm&to=${mail}&su=_`, '_blank')
 }
 
 export function openSocial (link) {
-    window.location.href = `${link}`
+    window.open(link)
 }
 
 export function navigate (id) {

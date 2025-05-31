@@ -1,6 +1,6 @@
 import "../style/components.css"
 import { BsX } from "react-icons/bs"
-import { navigate } from "../utils/mailer"
+import { navigate, openMail } from "../utils/mailer"
 
 export function MobileSlider ({ setSliderOpen }) {
 
