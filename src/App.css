@@ -1,0 +1,38 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+}
+
+
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  --bg: rgb(39, 39, 39);
+  --text: rgb(255, 255, 255);
+  --primary: rgb(208, 36, 53);
+  /* background: linear-gradient(var(--bg), rgb(36, 36, 36)); */
+  color: var(--text);
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
