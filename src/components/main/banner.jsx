@@ -12,7 +12,7 @@ export function Banner() {
 
                 <span>From once-skeptical filmmaker to becoming the face of ghost hunting and building a supernatural empire</span>
 
-                <button className="button" onClick={() => openMail("artistmanagementinquiries@gmail.com")}>
+                <button className="button" onClick={(e) => openMail(e, "artistmanagementinquiries@gmail.com")}>
                     Get in Touch
                 </button>
             </div>

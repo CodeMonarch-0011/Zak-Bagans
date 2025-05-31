@@ -14,7 +14,7 @@ export function Navbar ({ setSliderOpen }) {
                 <span onClick={() => navigate("#contact")}>Contact Us</span>
             </nav>
 
-            <button className="button" onClick={() => openMail("artistmanagementinquiries@gmail.com")}>
+            <button className="button" onClick={(e) => openMail(e, "artistmanagementinquiries@gmail.com")}>
                 Contact Us
             </button>
 

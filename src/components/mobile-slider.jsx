@@ -21,7 +21,7 @@ export function MobileSlider ({ setSliderOpen }) {
                 <span onClick={() => handleNavigation("#contact")}>Contact Us</span>
             </nav>
 
-            <button className="button slider-button" onClick={() => openMail("artistmanagementinquiries@gmail.com")}>
+            <button className="button slider-button" onClick={(e) => openMail(e, "artistmanagementinquiries@gmail.com")}>
                 Contact us
             </button>
         </div>
